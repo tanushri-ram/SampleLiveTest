@@ -60,18 +60,20 @@ exports.config = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     },
-    {
 
-    browser: "IE",
-    browser_version: "11.0",
-    maxInstances: 5,
-    browserName: 'internet explorer',
-    acceptUntrustedCertificates: true,
-    ignoreProtectedModeSettings: true,    
-    ignoreZoomSetting: true,  
-    require_window_focus: false
-    },
+    
+   // {
 
+   // browser: "IE",
+    //browser_version: "11.0",
+    //maxInstances: 5,
+    //browserName: 'internet explorer',
+    //acceptUntrustedCertificates: true,
+    //ignoreProtectedModeSettings: true,    
+    //ignoreZoomSetting: true,  
+    //require_window_focus: false
+    //},
+//
     ],
     //
     // ===================
@@ -104,7 +106,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://automationpractice.com/index.php',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -121,6 +123,7 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
+    //services:['selenium-standalone'],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
